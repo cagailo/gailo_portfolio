@@ -1,0 +1,247 @@
+/* Shared stylesheet for all three pages */
+body {
+    margin: 0;
+    padding: 38px 4.2%;
+    background-color: #eeeeee;
+    color: #080808;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.website {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+header {
+    box-sizing: border-box;
+    height: 158px;
+    padding: 24px 15px;
+    background-color: #19365f;
+    color: #ffffff;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    line-height: 1.25;
+}
+
+.tagline {
+    margin: 18px 0 0;
+    color: #a9e2f5;
+    font-size: 20px;
+}
+
+nav {
+    height: 68px;
+    padding-top: 24px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 24px;
+    color: #102f58;
+    font-size: 20px;
+}
+
+main {
+    box-sizing: border-box;
+}
+
+.home-content {
+    padding: 112px 7% 95px;
+    text-align: center;
+}
+
+.profile-image {
+    display: block;
+    width: 135px;
+    height: 135px;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+}
+
+.home-content h2 {
+    margin: 22px 0 48px;
+    color: #19365f;
+    font-size: 30px;
+}
+
+.intro {
+    margin: 0 0 45px;
+    text-align: left;
+}
+
+blockquote {
+    margin: 0;
+    padding: 25px 18px;
+    border: 2px solid #19365f;
+    background-color: #add8e6;
+    text-align: center;
+}
+
+.about-content {
+    padding: 96px 6.5% 74px;
+}
+
+.about-content h2,
+.skills-content h2 {
+    margin: 0;
+    color: #19365f;
+    font-size: 29px;
+}
+
+.about-image {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 26px auto 24px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.about-content p {
+    margin: 18px 0;
+}
+
+.education-heading {
+    margin-top: 118px !important;
+    margin-bottom: 25px !important;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+th, td {
+    padding: 13px;
+    border: 2px solid #19365f;
+}
+
+th {
+    background-color: #add8e6;
+    text-align: center;
+}
+
+td {
+    text-align: left;
+}
+
+.skills-content {
+    padding: 96px 6.5% 58px;
+}
+
+.skills-content > h2:first-child {
+    margin-bottom: 20px;
+}
+
+.skill-card {
+    box-sizing: border-box;
+    min-height: 220px;
+    margin: 0 0 20px;
+    padding: 21px 18px;
+    border: 2px solid #19365f;
+    text-align: center;
+}
+
+.skill-card img {
+    display: block;
+    width: 78px;
+    height: 78px;
+    margin: 0 auto 18px;
+    object-fit: cover;
+}
+
+.skill-card h3 {
+    margin: 0 0 17px;
+    font-size: 20px;
+}
+
+.skill-card p {
+    margin: 0;
+    font-size: 17px;
+}
+
+.interests-heading {
+    margin-top: 96px !important;
+    margin-bottom: 20px !important;
+}
+
+.contact-heading {
+    margin-top: 94px !important;
+    margin-bottom: 20px !important;
+}
+
+.skills-content p {
+    margin: 18px 0;
+}
+
+.skills-content a {
+    color: #19365f;
+}
+
+footer {
+    box-sizing: border-box;
+    min-height: 73px;
+    padding: 10px;
+    background-color: #19365f;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer p {
+    margin: 14px 0;
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    header {
+        height: auto;
+        padding: 24px 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 16px;
+    }
+
+    .home-content,
+    .about-content,
+    .skills-content {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .home-content {
+        padding-top: 65px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+}

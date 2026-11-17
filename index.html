@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Cyrill Ken Gailo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">K. PORTFOLIO</a>
+        <p>CYRILL KEN GAILO / A DIGITAL PORTFOLIO</p>
+    </header>
+    <nav aria-label="Main navigation">
+            <a class="current" aria-current="page" href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">My Projects</a>
+            <a href="coursework.html">Coursework</a>
+            <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section class="home-text">
+            <p class="label">WELCOME TO MY CORNER OF THE INTERNET</p>
+            <h1>A LITTLE ODD.<br><span>A LOT OF IDEAS.</span></h1>
+            <h2>Hey, I’m CK.</h2>
+            <p>I’m Cyrill Ken Gailo, a third-year BS Multimedia Arts student at FEU Institute of Technology.</p>
+            <p>This is a collection of my character illustrations, photographs, and Web Design activities. Take a look around and get to know the person behind the work.</p>
+            <a class="button" href="projects.html">See my work →</a>
+            <a class="plain-link" href="about.html">More about me</a>
+        </section>
+
+        <section class="home-picture">
+            <p class="label">CYRILL KEN GAILO / CK</p>
+            <img src="images/portrait.png" alt="My portrait wearing glasses and a checked shirt">
+            <p class="picture-caption">ARTIST. STUDENT. ALWAYS CREATING.</p>
+        </section>
+
+        <section class="wide-box">
+            <p class="label">INSIDE THIS PORTFOLIO</p>
+            <h2>Things I make. Things I’m learning.</h2>
+            <p><strong>My Projects:</strong> character art, photography, and the visual ideas I like exploring.</p>
+            <p><strong>Coursework:</strong> HTML and CSS outputs from my Web Design class.</p>
+            <p><strong>About Me:</strong> my interests, skills, and goals as a creative student.</p>
+        </section>
+
+        <section class="wide-box gray-box">
+            <h2>A note from the sketchbook</h2>
+     
+            <p id="note" style="display: none;">I enjoy working across different art forms. This portfolio lets me share the things I create and see how much I improve along the way.</p>
+            <button id="show-note" type="button">Show note</button>
+            <button id="hide-note" type="button">Hide note</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Cyrill Ken Gailo</p>
+        <p>Art, photographs, and a little bit of code.</p>
+        <a href="index.html">Back to Home</a>
+    </footer>
+    <script>
+  
+        let note = document.querySelector('#note');
+        let showButton = document.querySelector('#show-note');
+        let hideButton = document.querySelector('#hide-note');
+
+    
+        showButton.addEventListener('click', function () {
+            note.style.display = 'block';
+        });
+
+    
+        hideButton.addEventListener('click', function () {
+            note.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

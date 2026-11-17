@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Cyrill Ken Gailo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">K. PORTFOLIO</a>
+        <p>CYRILL KEN GAILO / A DIGITAL PORTFOLIO</p>
+    </header>
+    <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">My Projects</a>
+            <a href="coursework.html">Coursework</a>
+            <a class="current" aria-current="page" href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section class="page-heading">
+            <p class="label">04 / SAY HELLO</p>
+            <h1>LET’S MAKE<br><span>CONTACT.</span></h1>
+            <p>Have an idea, a question, or something creative to share?</p>
+        </section>
+
+        <section class="contact-info">
+            <h2>Find me here.</h2>
+            <p><strong>Name:</strong> Cyrill Ken Gailo</p>
+            <p><strong>School:</strong> FEU Institute of Technology</p>
+            <p><strong>Email:</strong><br><a href="mailto:cagailo@fit.edu.ph">cagailo@fit.edu.ph</a></p>
+            <p><strong>Creative community:</strong><br><a href="https://www.behance.net/">Explore Behance</a></p>
+            <p class="small-text">The Behance link opens the main website. My personal profile link can be added here later.</p>
+        </section>
+
+        <section class="contact-form">
+            <h2>Write a message.</h2>
+            <p>This is a frontend form. It does not send or save messages.</p>
+            <form id="contact-form">
+                <label for="name">Your name</label>
+                <input id="name" type="text" name="name" required>
+
+                <label for="email">Your email</label>
+                <input id="email" type="email" name="email" required>
+
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Check message</button>
+            </form>
+            <p id="form-message" role="status"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Cyrill Ken Gailo</p>
+        <p>Art, photographs, and a little bit of code.</p>
+        <a href="index.html">Back to Home</a>
+    </footer>
+    <script>
+    
+        let contactForm = document.querySelector('#contact-form');
+        let formMessage = document.querySelector('#form-message');
+
+        contactForm.addEventListener('submit', function (event) {
+          
+            event.preventDefault();
+            formMessage.textContent = 'Your form is complete.';
+        });
+    </script>
+</body>
+</html>
